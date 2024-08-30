@@ -12,11 +12,9 @@ func main() {
 }
 
 func RetainFirstHalf(str string) string {
-	if str == "" {
-		return str
-	} else if len(str) == 1 {
+	if len(str) <= 1 {
 		return str
 	}
-	m := len(str) / 2
-	return str[:m]
+	lengt := len(str) / 2
+	return str[:lengt]
 }
